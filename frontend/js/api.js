@@ -2,8 +2,15 @@
 // api.js  -  Shared helper functions for all pages
 // =================================================
 
-// Backend address (PHP in XAMPP). Change if your folder name is different
-const API_URL = 'http://localhost/Farm-to-Door/backend/index.php';
+// Backend address (PHP in XAMPP)
+// Works out the address from the page URL, so any folder name works.
+// Example: http://localhost/farm-to-door/frontend/products.html
+//      ->  http://localhost/farm-to-door/backend/index.php
+let API_URL = 'http://localhost/farm-to-door/backend/index.php';
+if (window.location.protocol.startsWith('http') && window.location.pathname.includes('/frontend/')) {
+  const projectPath = window.location.pathname.split('/frontend/')[0];
+  API_URL = window.location.origin + projectPath + '/backend/index.php';
+}
 
 // Image shown if a product image fails to load
 const NO_IMAGE = 'images/no-image.svg';
@@ -47,7 +54,15 @@ async function apiRequest(endpoint, method = 'GET', body = null) {
     throw new Error('Cannot connect to server. Is Apache running in XAMPP?');
   }
 
-  const data = await response.json();
+  // Read the reply. If it is not JSON (e.g. a PHP error page), show a clear message.
+  const text = await response.text();
+  let data;
+  try {
+    data = JSON.parse(text);
+  } catch (err) {
+    console.error('Server reply was not JSON:', text);
+    throw new Error('Backend error - open ' + API_URL + endpoint + ' to see details');
+  }
 
   // token expired -> logout
   if (response.status === 401 && token) {
