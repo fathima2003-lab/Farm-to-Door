@@ -1,6 +1,6 @@
 <?php
 // ===============================================
-// FARM-TO-DOOR  -  Backend (PHP for XAMPP)
+// farm-to-door  -  Backend (PHP for XAMPP)
 // Every API request comes to this file.
 // Example: index.php/products/5  ->  resource = products, id = 5
 // ===============================================
