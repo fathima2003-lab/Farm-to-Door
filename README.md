@@ -47,26 +47,21 @@ Farm-to-Door/
 
 ## ▶️ How to Run (XAMPP only)
 
-### Step 1 – Put the project in Apache's web folder
-Copy the whole `Farm-to-Door` folder into your Apache web folder:
-- Default XAMPP folder: `C:\xampp\htdocs\Farm-to-Door`
-- If you changed Apache's DocumentRoot, use that folder instead (e.g. `D:\Projects\Web_project\Farm-to-Door`).
-
-### Step 2 – Start XAMPP
+### Step 1 – Start XAMPP
 Open the XAMPP Control Panel and click **Start** for **Apache** and **MySQL**.
 
-### Step 3 – Import the database
+### Step 2 – Import the database
 1. Go to `http://localhost/phpmyadmin`.
 2. Open the **Import** tab, choose `backend/database/farm_to_door.sql`, then click **Import** (or **Go**).
 
-### Step 4 – Open the website
+### Step 3 – Open the website
 ```
-http://localhost/Farm-to-Door/frontend/index.html
+http://localhost/farm-to-door/
 ```
 
 To check the backend works, open this address. It should show the list of cities:
 ```
-http://localhost/Farm-to-Door/backend/index.php/orders/cities
+http://localhost/farm-to-door/backend/index.php/orders/cities
 ```
 
 > If your folder name or MySQL password is different:
@@ -159,4 +154,7 @@ New customers can register from the Register page. Admin accounts cannot be regi
 | GET | /notifications | Customer |
 
 ## 🖼️ Images
-Product images are real photos loaded from Unsplash, so you need an internet connection. If an image fails to load, a colourful placeholder (`frontend/images/no-image.svg`) is shown instead. The admin can change any product image by pasting a new image URL.
+Product images need an internet connection. If an image fails to load, a colourful placeholder (`frontend/images/no-image.svg`) is shown instead. The admin can change any product image by pasting a new image URL.
+
+**Done by:**MM Fathima Mina\
+  (for OOAD & SE Module personal project)
