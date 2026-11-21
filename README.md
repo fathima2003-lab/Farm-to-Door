@@ -156,5 +156,5 @@ New customers can register from the Register page. Admin accounts cannot be regi
 ## 🖼️ Images
 Product images need an internet connection. If an image fails to load, a colourful placeholder (`frontend/images/no-image.svg`) is shown instead. The admin can change any product image by pasting a new image URL.
 
-**Done by:**MM Fathima Mina\
+**Done by:** MM Fathima Mina\
   (for OOAD & SE Module personal project)
