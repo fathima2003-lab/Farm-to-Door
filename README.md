@@ -1,4 +1,4 @@
-# 🌱 Farm-to-Door:Direct-to-Consumer \Agricultural Supply Chain System
+# 🌱 Farm-to-Door: Direct-to-Consumer Agricultural Supply Chain System
 
 A web system where **customers** buy fresh farm produce online and an **admin** manages products, farmers, drivers and orders.
 
