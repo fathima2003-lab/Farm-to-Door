@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Farm-to-Door</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="navbar"></header>
+
+  <div class="page-banner">
+    <h1>🧺 Fresh Farm Market</h1>
+    <p>Pick your favourites and we'll deliver them to your door</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <!-- Search + category filter -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Search carrots, mangoes, rice...">
+        </div>
+        <div class="chips" id="categoryChips">
+          <button class="chip active" data-category="">All</button>
+          <button class="chip" data-category="Vegetable">🥕 Vegetables</button>
+          <button class="chip" data-category="Fruit">🥭 Fruits</button>
+          <button class="chip" data-category="Grain">🌾 Grains</button>
+          <button class="chip" data-category="Dairy">🥛 Dairy</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <p class="loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading products...</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Farm-to-Door</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <div class="admin-layout">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="logo"><i class="fa-solid fa-seedling"></i> Farm-to-Door</div>
+      <p class="role">Admin Panel</p>
+
+      <button class="side-link active" data-section="dashboard"><i class="fa-solid fa-chart-pie"></i> Dashboard</button>
+      <button class="side-link" data-section="products"><i class="fa-solid fa-carrot"></i> Products</button>
+      <button class="side-link" data-section="orders"><i class="fa-solid fa-receipt"></i> Orders</button>
+      <button class="side-link" data-section="farmers"><i class="fa-solid fa-tractor"></i> Farmers</button>
+      <button class="side-link" data-section="drivers"><i class="fa-solid fa-truck"></i> Drivers</button>
+      <button class="side-link" data-section="customers"><i class="fa-solid fa-users"></i> Customers</button>
+      <a href="index.html" class="side-link"><i class="fa-solid fa-store"></i> View Shop</a>
+      <button class="side-link" onclick="logout()"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main">
+      <div class="topbar">
+        <h1 id="pageTitle">Dashboard</h1>
+        <button class="btn btn-green" id="addBtn" style="display:none"><i class="fa-solid fa-plus"></i> <span id="addBtnText">Add</span></button>
+      </div>
+
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <!-- ===== POPUP FORM (used for add/edit) ===== -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <h2 id="modalTitle">Add</h2>
+      <form id="modalForm">
+        <div id="modalFields"></div>
+        <div class="modal-buttons">
+          <button type="button" class="btn btn-light" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn btn-green">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

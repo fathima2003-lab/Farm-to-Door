@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm-to-Door | Fresh From Farm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="navbar"></header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="tag">🌱 100% Fresh & Local</span>
+        <h1>From the <span>Farm</span> straight to your <span>Door</span></h1>
+        <p>Buy fresh vegetables, fruits, grains and dairy directly from Sri Lankan farmers. No middlemen, fair prices, delivered to your home.</p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-orange"><i class="fa-solid fa-basket-shopping"></i> Shop Now</a>
+          <a href="register.html" class="btn btn-outline">Create Account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <div class="container">
+    <div class="features">
+      <div class="feature" style="--c: var(--green)">
+        <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+        <h3>Farm Fresh</h3>
+        <p>Harvested and delivered within 24 hours.</p>
+      </div>
+      <div class="feature" style="--c: var(--orange)">
+        <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+        <h3>Fair Prices</h3>
+        <p>Farmers earn more, you pay less.</p>
+      </div>
+      <div class="feature" style="--c: var(--blue)">
+        <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>Doorstep Delivery</h3>
+        <p>Our drivers bring orders to your home.</p>
+      </div>
+      <div class="feature" style="--c: var(--purple)">
+        <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+        <h3>Cash on Delivery</h3>
+        <p>Pay only when you receive your order.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Shop by <span>Category</span></h2>
+        <p>Everything fresh from local farms</p>
+      </div>
+      <div class="categories">
+        <a href="products.html?category=Vegetable" class="category-card" style="--c: rgba(46,158,79,0.9)">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80&auto=format&fit=crop" alt="Vegetables" onerror="this.src='images/no-image.svg'">
+          <div class="label"><h3>🥕 Vegetables</h3><p>Upcountry fresh</p></div>
+        </a>
+        <a href="products.html?category=Fruit" class="category-card" style="--c: rgba(255,138,0,0.9)">
+          <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=600&q=80&auto=format&fit=crop" alt="Fruits" onerror="this.src='images/no-image.svg'">
+          <div class="label"><h3>🥭 Fruits</h3><p>Sweet & tropical</p></div>
+        </a>
+        <a href="products.html?category=Grain" class="category-card" style="--c: rgba(194,138,44,0.9)">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80&auto=format&fit=crop" alt="Grains" onerror="this.src='images/no-image.svg'">
+          <div class="label"><h3>🌾 Grains</h3><p>Rice & pulses</p></div>
+        </a>
+        <a href="products.html?category=Dairy" class="category-card" style="--c: rgba(47,143,239,0.9)">
+          <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80&auto=format&fit=crop" alt="Dairy" onerror="this.src='images/no-image.svg'">
+          <div class="label"><h3>🥛 Dairy</h3><p>Milk, curd & eggs</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LATEST PRODUCTS ===== -->
+  <section style="background:#f3f9f1">
+    <div class="container">
+      <div class="section-title">
+        <h2>Fresh <span>Arrivals</span></h2>
+        <p>Just added by our farmers</p>
+      </div>
+      <div class="product-grid" id="featuredProducts">
+        <p class="loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading products...</p>
+      </div>
+      <div style="text-align:center; margin-top:35px">
+        <a href="products.html" class="btn btn-green">View All Products <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>How It <span>Works</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step" style="--c: var(--green)"><div class="num"><i class="fa-solid fa-magnifying-glass"></i></div><h3>1. Browse</h3><p>Pick fresh produce</p></div>
+        <div class="step" style="--c: var(--orange)"><div class="num"><i class="fa-solid fa-cart-shopping"></i></div><h3>2. Order</h3><p>Checkout with COD</p></div>
+        <div class="step" style="--c: var(--blue)"><div class="num"><i class="fa-solid fa-truck"></i></div><h3>3. Deliver</h3><p>Driver brings it to you</p></div>
+        <div class="step" style="--c: var(--purple)"><div class="num"><i class="fa-solid fa-face-smile"></i></div><h3>4. Enjoy</h3><p>Fresh food at home</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FARMER BANNER ===== -->
+  <section style="background:#fff6e5">
+    <div class="container farmer-banner">
+      <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=900&q=80&auto=format&fit=crop" alt="Farmer" onerror="this.src='images/no-image.svg'">
+      <div>
+        <h2>Supporting Local <span>Farmers</span></h2>
+        <p>Every order helps a Sri Lankan farmer earn a fair price for their hard work.</p>
+        <ul>
+          <li><i class="fa-solid fa-circle-check"></i> No middlemen commission</li>
+          <li><i class="fa-solid fa-circle-check"></i> Less post-harvest wastage</li>
+          <li><i class="fa-solid fa-circle-check"></i> Traceable produce - know your farmer</li>
+        </ul>
+        <a href="products.html" class="btn btn-orange">Start Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="js/cart.js"></script>
+  <script src="js/api.js"></script>
+  <script>
+    renderNavbar('home');
+    renderFooter();
+
+    // Load latest 8 products
+    async function loadFeatured() {
+      const box = document.getElementById('featuredProducts');
+      try {
+        const products = await apiRequest('/products');
+        box.innerHTML = products.slice(0, 8).map(productCardHTML).join('');
+      } catch (err) {
+        box.innerHTML = `<p class="loading">⚠️ ${err.message}</p>`;
+      }
+    }
+    loadFeatured();
+  </script>
+</body>
+</html>
