@@ -21,7 +21,7 @@ Open the XAMPP Control Panel and click **Start** for **Apache** and **MySQL**.
 ### Step 3 – Open the website
 http://localhost/farm-to-door/
 
-To check the backend works, open this address. It should show the list of cities:
+To check the backend works, open this address. It should show the list of cities:<br>
 http://localhost/farm-to-door/backend/index.php/orders/cities
 
 ---
