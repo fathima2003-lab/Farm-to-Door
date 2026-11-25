@@ -13,9 +13,6 @@ function selectRole(role) {
 
   // Admin cannot register - hide the link
   document.getElementById('registerLink').style.display = role === 'admin' ? 'none' : 'block';
-  document.getElementById('demoNote').innerHTML = role === 'admin'
-    ? '<b>Admin:</b> admin@farmtodoor.lk / admin123'
-    : '<b>Demo customer:</b> customer@farmtodoor.lk / customer123';
 }
 
 const loginForm = document.getElementById('loginForm');
