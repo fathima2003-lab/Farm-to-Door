@@ -146,7 +146,5 @@ Farm-to-Door/
 ## 🖼️ Images
 Product images need an internet connection. If an image fails to load, a colourful placeholder (`frontend/images/no-image.svg`) is shown instead. The admin can change any product image by pasting a new image URL.
 
-**Done by:** MM Fathima Mina <br>
-(for my personal project (SE module) )
 **Done by:** MM Fathima Mina\
   (for OOAD & SE Module personal project)
