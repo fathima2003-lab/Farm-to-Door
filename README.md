@@ -1,4 +1,4 @@
-# 🌱 Farm-to-Door: Direct-to-Consumer Agricultural Supply Chain System
+# 🌱 Farm-to-Door: Direct-to-Consumer <br>Agricultural Supply Chain System
 
 A web system where **customers** buy fresh farm produce online and an **admin** manages products, farmers, drivers and orders.
 
@@ -6,6 +6,34 @@ A web system where **customers** buy fresh farm produce online and an **admin** 
 - **Farmers** and **Delivery Drivers** do NOT log in. The admin manages them.
 - Payment: Cash on Delivery
 - Runs on **XAMPP only** (Apache + PHP + MySQL). No Node.js or npm needed.
+
+---
+
+## ▶️ How to Run (XAMPP only)
+
+### Step 1 – Start XAMPP
+Open the XAMPP Control Panel and click **Start** for **Apache** and **MySQL**.
+
+### Step 2 – Import the database
+1. Go to `http://localhost/phpmyadmin`.
+2. Open the **Import** tab, choose `backend/database/farm_to_door.sql`, then click **Import** (or **Go**).
+
+### Step 3 – Open the website
+http://localhost/farm-to-door/
+
+To check the backend works, open this address. It should show the list of cities:
+http://localhost/farm-to-door/backend/index.php/orders/cities
+
+---
+
+## 🔑 Login Accounts
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@farmtodoor.lk | admin123 |
+| Customer (demo) | customer@farmtodoor.lk | customer123 |
+
+New customers can register from the Register page. Admin accounts cannot be registered.
 
 ---
 
@@ -42,44 +70,6 @@ Farm-to-Door/
     ├── css/style.css, css/admin.css
     └── js/  api.js, cart.js, products.js, cart-page.js, orders.js, auth.js, admin.js
 ```
-
----
-
-## ▶️ How to Run (XAMPP only)
-
-### Step 1 – Start XAMPP
-Open the XAMPP Control Panel and click **Start** for **Apache** and **MySQL**.
-
-### Step 2 – Import the database
-1. Go to `http://localhost/phpmyadmin`.
-2. Open the **Import** tab, choose `backend/database/farm_to_door.sql`, then click **Import** (or **Go**).
-
-### Step 3 – Open the website
-```
-http://localhost/farm-to-door/
-```
-
-To check the backend works, open this address. It should show the list of cities:
-```
-http://localhost/farm-to-door/backend/index.php/orders/cities
-```
-
-> If your folder name or MySQL password is different:
-> - Folder name → change `API_URL` in `frontend/js/api.js`
-> - MySQL password → change `DB_PASS` in `backend/config/db.php`
-
----
-
-## 🔑 Login Accounts
-
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@farmtodoor.lk | admin123 |
-| Customer (demo) | customer@farmtodoor.lk | customer123 |
-
-New customers can register from the Register page. Admin accounts cannot be registered.
-
----
 
 ## ✨ Features
 
@@ -156,5 +146,7 @@ New customers can register from the Register page. Admin accounts cannot be regi
 ## 🖼️ Images
 Product images need an internet connection. If an image fails to load, a colourful placeholder (`frontend/images/no-image.svg`) is shown instead. The admin can change any product image by pasting a new image URL.
 
+**Done by:** MM Fathima Mina <br>
+(for my personal project (SE module) )
 **Done by:** MM Fathima Mina\
   (for OOAD & SE Module personal project)
