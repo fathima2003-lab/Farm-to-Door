@@ -49,12 +49,18 @@ const CITY_DISTANCES = [
     'Nugegoda' => 12,
     'Maharagama' => 15,
     'Kaduwela' => 18,
+    'Moratuwa' => 23,
     'Gampaha' => 25,
+    'Dambulla' => 33,
     'Negombo' => 35,
+    'Vavuniya' => 40,
     'Kalutara' => 42,
     'Avissawella' => 55,
+    'Batticaloa' => 99,
     'Ratnapura' => 100,
     'Kandy' => 115,
+    'Kalmunai' => 115,
+    'Ampara' => 120,
     'Galle' => 120
 ];
 
