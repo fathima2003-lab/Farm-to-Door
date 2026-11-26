@@ -12,15 +12,15 @@ interface DeliveryFeeStrategy {
 // Strategy 1: same fee for every order
 class FlatRateStrategy implements DeliveryFeeStrategy {
     public function calculate($distanceKm) {
-        return 350; // Rs. 350
+        return 250; // Rs. 250
     }
 }
 
 // Strategy 2: fee depends on distance
 class DistanceBasedStrategy implements DeliveryFeeStrategy {
     public function calculate($distanceKm) {
-        $baseFee = 200;  // Rs. 200 starting fee
-        $perKm = 20;     // Rs. 20 per km
+        $baseFee = 100;  // Rs. 100 starting fee
+        $perKm = 10;     // Rs. 10 per km
         return $baseFee + $distanceKm * $perKm;
     }
 }
@@ -45,7 +45,7 @@ class DeliveryFeeCalculator {
 // Delivery cities and their distance (km) from our collection centre
 const CITY_DISTANCES = [
     'Colombo' => 5,
-    'Dehiwala' => 10,
+    'Dehiwala' => 5,
     'Nugegoda' => 12,
     'Maharagama' => 15,
     'Kaduwela' => 18,
