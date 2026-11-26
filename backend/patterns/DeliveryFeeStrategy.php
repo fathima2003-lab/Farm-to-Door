@@ -12,15 +12,15 @@ interface DeliveryFeeStrategy {
 // Strategy 1: same fee for every order
 class FlatRateStrategy implements DeliveryFeeStrategy {
     public function calculate($distanceKm) {
-        return 250; // Rs. 250
+        return 350; // Rs. 350
     }
 }
 
 // Strategy 2: fee depends on distance
 class DistanceBasedStrategy implements DeliveryFeeStrategy {
     public function calculate($distanceKm) {
-        $baseFee = 100;  // Rs. 100 starting fee
-        $perKm = 10;     // Rs. 10 per km
+        $baseFee = 200;  // Rs. 200 starting fee
+        $perKm = 20;     // Rs. 20 per km
         return $baseFee + $distanceKm * $perKm;
     }
 }
